@@ -3,71 +3,151 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+    <!-- Custom styles for this template -->
+    <link href="src/css/new-age.css" rel="stylesheet">
+    <!-- <link href="src/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
+    <link href="src/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="src/simple-line-icons/css/simple-line-icons.css">
+
+    <!-- Bootstrap core JavaScript -->
+    <script defer src="src/jquery/jquery.min.js"></script>
+    <script defer src="src/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Plugin JavaScript -->
+    <script defer src="src/jquery-easing/jquery.easing.min.js"></script>
+    <!-- Custom scripts for this template -->
+    <!-- <script defer src="src/js/new-age.min.js"></script> -->
+
+    <!-- Njenga JS -->
     <script defer src='src/index.js'></script>
-    <title>Document</title>
+    <title>CareConnect</title>
   </head>
-<body>
-  <h1>Welcome to CareConnect</h1>
-  <h4>We support you through finding home care for elders you love </h4>
+<body id>
+  <div class=>
+    <header class='container masthead header-content'>
+    <h1 class='mb-5 text-center'>CareConnect</h1>
+    <h4 class='mb-5 text-center'>Find home care for elders you love, through people you can trust.</h4><br>
+    <h6 class='mb-5 text-center'>
+    <a href="#" class="btn btn-outline btn-xl js-scroll-trigger" id='form-start'>Get Started</a>
+    </h6>
+    </header>
 
-  <div id='questions'>Answer a Few Questions To Get Started
-    <form id='question-container'>
-
-      <div id='form-question' data-id='1'>
-        <p data-id='zip'>Zip code where you need care?
-          <input type="text" pattern="[0-9]{5}" title="Five digit zip code" required/>
-          <br>
-        </p>
-      </div>
-
-      <div id='form-question' data-id='2'>
-        <p id='2'>Who needs care?
-          <br>
-          <label class="radio-inline"><input type="radio" name="q_care_receiver" value="Parent">Parent</label>
-          <label class="radio-inline"><input type="radio" value="Grandparent" name="q_care_receiver">Grandparent</label>
-          <label class="radio-inline"><input type="radio" value="Spouse" name="q_care_receiver">Spouse</label>
-          <label class="radio-inline"><input type="radio" value="Friend" name="q_care_receiver">Friend</label>
-          <label class="radio-inline"><input type="radio" value="Me" name="q_care_receiver">Me</label>
-          <label class="radio-inline"><input type="radio" value="Other" name="q_care_receiver">Other</label>
-        </p>
-      </div>
-
-      <div id='form-question' data-id='3'>
-        <p id='3'>How soon is the care needed?
-          <br>
-          <label class="radio-inline"><input type="radio" name="q_care_timeframe" value="Parent">Right now</label>
-          <label class="radio-inline"><input type="radio" value="Grandparent" name="q_care_timeframe">Week</label>
-          <label class="radio-inline"><input type="radio" value="Spouse" name="q_care_timeframe">Month</label>
-          <label class="radio-inline"><input type="radio" value="Friend" name="q_care_timeframe">Unsure/Browsing</label>
-        </p>
-      </div>
-
-      <div id='form-question' data-id='4'>
-        <p id='4'>What skills do you need in caregiver?
-          <br>
-          <label class="radio-inline"><input type="radio" name="q_skills" value="Parent">CPR/First-aid</label>
-          <label class="radio-inline"><input type="radio" value="Grandparent" name="q_skills">Certified nursing assistant</label>
-          <label class="radio-inline"><input type="radio" value="Spouse" name="q_skills">Comfortable with pets</label>
-          <label class="radio-inline"><input type="radio" value="Friend" name="q_skills">Has own transportation</label>
-        </p>
-      </div>
-
-      <div id='form-question' data-id='5'>
-        <p id='5'>What is your preffered years of experience for a caregiver?
-          <br>
-          <label class="radio-inline"><input type="radio" name="q_experience" value="Parent">1-3</label>
-          <label class="radio-inline"><input type="radio" value="Grandparent" name="q_experience">3-5</label>
-          <label class="radio-inline"><input type="radio" value="Spouse" name="q_experience">5-7</label>
-
-        </p>
-      </div>
-    </form>
   </div>
+    <section class='features' id='features'>
+    <div class='container' id='questions'>
+
+      <form class='regForm' id='question-container container'>
+
+        <div class='question form-group' id='form-question' data-id='1'>
+          <p data-id='zip'>Zip code where you need care?
+            <input class='form-control' type="text" pattern="[0-9]{5}" title="Five digit zip code" required/>
+            <br>
+          </p>
+        </div>
+
+        <div class= 'question custom-control custom-radio' id='form-question' data-id='2'>
+          <p>Who needs care?
+            <br>
+            <br>
+            <label class="radio-inline"><input type="radio" name="q_care_receiver" value="Parent">Parent</label>
+            <label class="radio-inline"><input type="radio" value="Grandparent" name="q_care_receiver">Grandparent</label>
+            <label class="radio-inline"><input type="radio" value="Spouse" name="q_care_receiver">Spouse</label>
+            <label class="radio-inline"><input type="radio" value="Friend" name="q_care_receiver">Friend</label>
+            <label class="radio-inline"><input type="radio" value="Me" name="q_care_receiver">Me</label>
+            <label class="radio-inline"><input type="radio" value="Other" name="q_care_receiver">Other</label>
+          </p>
+        </div>
+
+        <div class=" question container" id=
+        "form-question" data-id='3'>
+          <p>What skills do you need in a caregiver?</p>
+        	<div class="row">
+            <div class="col-md-6 col-lg-10 col-sm-6">
+        	    <div class="card" style="margin:50px 0">
+                        <!-- Default panel contents -->
+                <ul class="">
+                    <li class="list-group-item">
+                      Dressing, bathing, and/or grooming
+                    <input type="checkbox">
+                  </li>
+                    <li class="list-group-item">
+                      Meal preparation
+                      <input type="checkbox">
+                    </li>
+                    <li class="list-group-item">
+                      Transportation
+                      <input type="checkbox" class="primary">
+                    </li>
+                    <li class="list-group-item">
+                      Medicine reminders/consumption
+                      <input type="checkbox">
+                    </li>
+                    <li class="list-group-item">
+                      Administrative support(e.g., paying bills, making calls)
+                      <input type="checkbox">
+                    </li>
+                    <li class="list-group-item">
+                      Companionship
+                      <input type="checkbox">
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
 
 
-<div>Resources to help you answer questions</div><br>
+        <div class='question' id='form-question' data-id='4'>
+          <p>How soon is the care needed?
+            <br>
+            <label class="radio-inline"><input type="radio" name="q_care_timeframe" value="Parent">Right now</label>
+            <label class="radio-inline"><input type="radio" value="Grandparent" name="q_care_timeframe">Week</label>
+            <label class="radio-inline"><input type="radio" value="Spouse" name="q_care_timeframe">Month</label>
+            <label class="radio-inline"><input type="radio" value="Friend" name="q_care_timeframe">Over a month/Unsure</label>
+          </p>
+        </div>
 
-  <div>Caregivers that Meet Your Criteria </div><br>
+        <div class='question' id='form-question' data-id='5'>
+          <p>What is your preffered years of experience for a caregiver?
+            <br>
+            <label class="radio-inline"><input type="radio" name="q_experience" value="Parent">1-3</label>
+            <label class="radio-inline"><input type="radio" value="Grandparent" name="q_experience">3-5</label>
+            <label class="radio-inline"><input type="radio" value="Spouse" name="q_experience">5+</label>
+          </p>
+        </div>
+
+        <div class='form-buttons'>
+          <div class='form-buttons'>
+            <button class='text-center btn-sm' type="button" id="prevBtn">Previous</button>
+            <button class='btn-sm' type="button" id="nextBtn">Next</button>
+          </div>
+
+        <!-- Circles which indicates the steps of the form: -->
+            <div class='form-steps'>
+              <span class="step"></span>
+              <span class="step"></span>
+              <span class="step"></span>
+              <span class="step"></span>
+              <span class="step"></span>
+            </div>
+        </div>
+
+      </form>
+    </div>
+
+    <br>
+    <br>
+  <div class='section-heading text-center'>
+    <h4>Resources to help you get started</h4>
+  </div><br>
+
+  <div class='section-heading text-center'>
+    <h4>Caregivers that Meet Your Criteria</h4>
+  </div><br>
+
+  </section>
 
   <div>Have a question? Ask for help</div><br>
 
